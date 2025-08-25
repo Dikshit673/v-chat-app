@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon --ext \"ts,mts,cts,js,mjs,cjs,json\" --exec \"tsx src/index.ts\"",
     "start": "tsx src/index.ts",
@@ -16,6 +17,7 @@
   "packageManager": "pnpm@10.14.0",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "cloudinary": "^2.7.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
