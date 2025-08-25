@@ -5,6 +5,7 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   { 
+    extends: [js.configs.recommended,...tseslint.configs.recommended], 
     files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], 
     languageOptions: { globals: globals.browser },
     plugins: { js },
@@ -12,7 +13,6 @@ export default defineConfig([
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": ["off"],
     }, 
-    extends: ["js/recommended"], 
   },
-  tseslint.configs.recommended
+  
 ]);
